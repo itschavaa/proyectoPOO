@@ -1,0 +1,22 @@
+#IncludeRegexLine: ^[ 	]*[#%][ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+
+#IncludeRegexScan: ^.*$
+
+#IncludeRegexComplain: ^$
+
+#IncludeRegexTransform: 
+
+C:/Users/salva/CLionProjects/proyectoPOO/aeropuerto.h
+string
+-
+utility
+-
+
+C:/Users/salva/CLionProjects/proyectoPOO/main.cpp
+iostream
+-
+string
+-
+aeropuerto.h
+C:/Users/salva/CLionProjects/proyectoPOO/aeropuerto.h
+
