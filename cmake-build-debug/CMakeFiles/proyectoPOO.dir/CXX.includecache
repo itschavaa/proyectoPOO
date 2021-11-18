@@ -6,17 +6,39 @@
 
 #IncludeRegexTransform: 
 
-C:/Users/salva/CLionProjects/proyectoPOO/aeropuerto.h
+C:/Users/salva/CLionProjects/proyectoPOO/Aeropuerto.h
 string
 -
 utility
 -
+
+C:/Users/salva/CLionProjects/proyectoPOO/Pasajero.h
+string
+-
+utility
+-
+cstdlib
+-
+ctime
+-
+Vuelo.h
+C:/Users/salva/CLionProjects/proyectoPOO/Vuelo.h
+
+C:/Users/salva/CLionProjects/proyectoPOO/Vuelo.h
+string
+-
+cstdlib
+-
+ctime
+-
+Aeropuerto.h
+C:/Users/salva/CLionProjects/proyectoPOO/Aeropuerto.h
 
 C:/Users/salva/CLionProjects/proyectoPOO/main.cpp
 iostream
 -
 string
 -
-aeropuerto.h
-C:/Users/salva/CLionProjects/proyectoPOO/aeropuerto.h
+Pasajero.h
+C:/Users/salva/CLionProjects/proyectoPOO/Pasajero.h
 

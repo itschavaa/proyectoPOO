@@ -1,45 +1,37 @@
 #include <iostream>
 #include <string>
-#include "aeropuerto.h"
+#include "Pasajero.h"
 
 using namespace std;
 
 int main() {
-    Pasajero pasajero1("Salvador Rodriguez Paredes", 4352, 13);
-    Vuelo vuelo1(4352, 120, "San Antonio,TX", "Texas", 30);
-    Aeropuerto aeropuero1("San Antonio,TX", "Estados Unidos de America", 5);
-    cout << "Bienvenide " << pasajero1.get_nombrePasajero() << endl;
-    cout << "Tu numero de vuelo es: " << pasajero1.get_numeroVuelo() << endl;
-    cout << "Tu numero de asiento es: " << pasajero1.get_numeroAsiento() << endl;
-    cout << endl;
-    cout << "El vuelo " << vuelo1.get_numeroVuelo() << " con destino a " << vuelo1.get_destino() << " aterrizara al"
-         << endl
-         << "aeropuerto de " << vuelo1.get_aeropuertoLlegada() << " y tiene una duracion de "
-         << vuelo1.get_duracionVuelo()
-         << " min" << endl << "(" << vuelo1.get_asientosDisponibles() << " asientos disponibles)" << endl;
-    cout << endl;
-    cout << "Nombre del Aeropuerto: " << aeropuero1.get_nombreAeropuerto() << endl;
-    cout << "Pais de ubicacion del Aeropuerto: " << aeropuero1.get_pais() << endl;
-    cout << "Vuelos en transcurso: " << aeropuero1.get_numeroVuelos() << endl;
+    Pasajero pasajero;
+    Vuelo vuelo;
+    Aeropuerto aeropuerto;
 
-    pasajero1.set_nombrePasarejo("Ernesto Guillen"), pasajero1.set_numeroVuelo(5261),
-            pasajero1.set_numeroAsiento(15),vuelo1.set_numeroVuelo(5261),vuelo1.set_aeropuertoLlegada("Sheremetyevo, Mou"),
-            vuelo1.set_asientosDisponibles(50),vuelo1.set_destino("Moscu"),vuelo1.set_duracionVuelo(960),
-            aeropuero1.set_nombreAeropuerto("Sheremetyvo, Mou"),aeropuero1.set_numeroVuelos(15),aeropuero1.set_pais("Russia");
+    aeropuerto.set_nombreAeropuerto("Houston George Bush");
+    aeropuerto.set_pais("USA");
+    aeropuerto.set_numeroVuelos(300);
+
+    vuelo.set_asientosDisponibles(56);
+    vuelo.set_duracionVuelo(200);
+    vuelo.set_aeropuerto(aeropuerto);
+
+    pasajero.set_vuelo(vuelo);
+    pasajero.set_nombrePasarejo("Salvador Rodriguez");
+
+    cout << "Bienvenidx " << pasajero.get_nombrePasajero() << endl;
+    vuelo.obtenerNumeroVuelo();
+    cout << "Tu numero de vuelo es: " << vuelo.get_numeroVuelo() << endl;
+    cout << "El numero de asientos en total es de: " << vuelo.get_asientosDisponibles() << endl;
+    pasajero.obtenerNumeroAsiento();
+    pasajero.reservar_asiento(vuelo);
+    cout << "Tu numero de asiento es: " << pasajero.get_numeroAsiento();
     cout << endl;
-    cout << "Bienvenide " << pasajero1.get_nombrePasajero() << endl;
-    cout << "Tu numero de vuelo es: " << pasajero1.get_numeroVuelo() << endl;
-    cout << "Tu numero de asiento es: " << pasajero1.get_numeroAsiento() << endl;
-    cout << endl;
-    cout << "El vuelo " << vuelo1.get_numeroVuelo() << " con destino a " << vuelo1.get_destino() << " aterrizara al"
-         << endl
-         << "aeropuerto de " << vuelo1.get_aeropuertoLlegada() << " y tiene una duracion de "
-         << vuelo1.get_duracionVuelo()
-         << " min" << endl << "(" << vuelo1.get_asientosDisponibles() << " asientos disponibles)" << endl;
-    cout << endl;
-    cout << "Nombre del Aeropuerto: " << aeropuero1.get_nombreAeropuerto() << endl;
-    cout << "Pais de ubicacion del Aeropuerto: " << aeropuero1.get_pais() << endl;
-    cout << "Vuelos en transcurso: " << aeropuero1.get_numeroVuelos() << endl;
-    return 0;
+    cout << "Tu vuelo con destino al aeropuerto de " << aeropuerto.get_nombreAeropuerto() << ", "
+         << aeropuerto.get_pais() << " (con " << aeropuerto.get_numeroVuelos()
+         << " vuelos en este momento)"<<endl<< "tiene una duracion de " << vuelo.get_duracionVuelo()
+         << " minutos aproximadamente."<<endl;
+    cout << vuelo.get_asientosDisponibles() <<" asientos disponibles."<<endl;
 }
 
