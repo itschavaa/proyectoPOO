@@ -1,3 +1,6 @@
+/*Salvador Rodriguez Paredes
+ * A01704562
+ * Programación Orientada a Objetos */
 #include <iostream>
 #include <string>
 #include "Pasajero.h"

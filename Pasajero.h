@@ -1,4 +1,4 @@
-/*Salvador Rodríguez Paredes
+/*Salvador Rodriguez Paredes
  * A01704562
  * Programación Orientada a Objetos */
 
