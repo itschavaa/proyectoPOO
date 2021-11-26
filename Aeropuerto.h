@@ -56,4 +56,40 @@ void Aeropuerto::set_pais(string pai) {
     pais = pai;
 }
 
+class Dinamarca  : public Aeropuerto {
+public:
+    Dinamarca (string nomAe, string pai, int numVu) : Aeropuerto(nomAe, pai, numVu) {};
+    Dinamarca():Aeropuerto("","",0){};
+
+    float coronaDanesa_peso(float);
+};
+
+float Dinamarca ::coronaDanesa_peso(float coro_dan) {
+    float peso = coro_dan * 3.27;
+    return peso;
+}
+
+class China : public Aeropuerto {
+public:
+    China(string nomAe, string pai, int numVu) : Aeropuerto(nomAe, pai, numVu) {};
+    China():Aeropuerto("","",0){};
+    float yuanChino_peso(float);
+};
+
+float China::yuanChino_peso(float yuan_chino) {
+    float peso = yuan_chino * 3.40;
+    return  peso;
+}
+
+class Texas : public Aeropuerto{
+public:
+    Texas(string nomAe, string pai,int numVu): Aeropuerto(nomAe,pai,numVu){};
+    Texas():Aeropuerto("","",0){};
+    double dolarEua_peso(float);
+};
+
+double Texas::dolarEua_peso(float dolar) {
+    float peso = dolar * 21.72;
+    return peso;
+}
 #endif

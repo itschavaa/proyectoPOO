@@ -16,14 +16,15 @@ private:
     int numeroVuelo;
     int duracionVuelo;
     Aeropuerto aeropuerto;
+    float precio;
 
 public:
     int asientosDisponible;
 
-    Vuelo() : numeroVuelo(0), duracionVuelo(0), asientosDisponible(0) {};
+    Vuelo() : numeroVuelo(0), duracionVuelo(0), asientosDisponible(0), precio(0) {};
 
-    Vuelo(int durVu, int asiDu, Aeropuerto aero) : duracionVuelo(durVu),
-                                                   asientosDisponible(asiDu), aeropuerto(aero) {};
+    Vuelo(int durVu, int asiDu, Aeropuerto aero, float pre) : duracionVuelo(durVu),
+                                                   asientosDisponible(asiDu), aeropuerto(aero), precio(pre) {};
 
     int get_numeroVuelo();
 
@@ -33,6 +34,8 @@ public:
 
     Aeropuerto get_aeropuerto();
 
+    float get_precio();
+
     void set_numeroVuelo(int);
 
     void set_duracionVuelo(int);
@@ -40,6 +43,8 @@ public:
     void set_asientosDisponibles(int);
 
     void set_aeropuerto(Aeropuerto);
+
+    void set_precio(float);
 
     int obtenerNumeroVuelo();
 };
@@ -60,6 +65,10 @@ Aeropuerto Vuelo::get_aeropuerto() {
     return aeropuerto;
 }
 
+float Vuelo::get_precio() {
+    return precio;
+}
+
 void Vuelo::set_numeroVuelo(int numVu) {
     numeroVuelo = numVu;
 }
@@ -74,6 +83,10 @@ void Vuelo::set_duracionVuelo(int durVu) {
 
 void Vuelo::set_aeropuerto(Aeropuerto aero) {
     aeropuerto = aero;
+}
+
+void Vuelo ::set_precio(float pre) {
+    precio = pre;
 }
 
 int Vuelo::obtenerNumeroVuelo() {
