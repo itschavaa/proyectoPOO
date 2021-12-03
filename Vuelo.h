@@ -88,27 +88,27 @@ float Vuelo::get_precio() {
     return precio;
 }
 
-//Método que regresa valor de numero vuelos
+//Método que asigna un valor a numero vuelos
 void Vuelo::set_numeroVuelo(int numVu) {
     numeroVuelo = numVu;
 }
 
-//Método que regresa valor de asientos disponibles
+//Método que asigna un valor a asientos disponibles
 void Vuelo::set_asientosDisponibles(int asiDu) {
     asientosDisponible = asiDu;
 }
 
-//Método que regresa valor de duracion de vuelo
+//Método que asigna un valor a duracion de vuelo
 void Vuelo::set_duracionVuelo(int durVu) {
     duracionVuelo = durVu;
 }
 
-//Método que regresa valor de aeropuerto
+//Método que asigna un valor a aeropuerto
 void Vuelo::set_aeropuerto(Aeropuerto aero) {
     aeropuerto = aero;
 }
 
-//Método que regresa valor de precia
+//Método que asigna un valor a precia
 void Vuelo ::set_precio(float pre) {
     precio = pre;
 }
